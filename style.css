@@ -31,103 +31,61 @@ body {
   margin: 0;
   font-size:large;
 }
-/* Page structure */
-.wrapper {
-  min-height: var(--wrapper-height);
-  display: grid;
-  place-items: center;
-  margin: 0;
-  padding:1rem 2rem;
-}
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.illustration {
-  max-width:30%;
-  margin:1rem 0 2rem 0;
-  animation: 1s ease-out 0s 1 spinIn;
-}
-@keyframes spinIn {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.illustration-404 {
-  max-width:30%;
-  margin:1rem 0 2rem 0;
-  animation: 1s ease-out 0s 1 spinUp;
-  filter: grayscale(100%);
-  animation-fill-mode: forwards;
+.player {
+    width: 10px;
+    height: 10px;
+    background: red;
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    left: 300px;
 } 
-@keyframes spinUp {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
+.monster {
+    width: 10px;
+    height: 10px;
+    background: lime;
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    left: 50px; 
 }
-
-/* Typography */
-p {
-  margin: 1rem;
-  line-height: 1.3em;
+.keyup {
+    width: 50px;
+    height: 20px;
+    background: grey;
+    color: #ffffff;
+    position: absolute;
+    top: 450px;
+    left: 170px;
+    user-select: none; 
 }
-p,
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: var(--color-text-main);
+.keyleft {
+    width: 50px;
+    height: 20px;
+    background: gray;
+    color: #ffffff;
+    position: absolute;
+    top: 470px;
+    left: 120px;
+    user-select: none;
 }
-h1 {
-  display: inline-flex;
-  color: var(--color-primary);
-  justify-content: center;
+.keydown {
+    width: 50px;
+    height: 20px;
+    background: gray;
+    color: #ffffff;
+    position: absolute;
+    top: 470px;
+    left: 170px;
+    user-select: none; 
 }
-/* Link styles */
-a:link,
-a:visited {
-  text-decoration: none;
-  border-bottom: 2px solid var(--color-primary);
-  color: var(--color-primary);
-  transition: background 0.2s linear;
-  font-weight: bold;
-}
-a:hover,
-a:active,
-a:focus {
-  background: var(--color-primary);
-  color:var(--color-highlight);
-}
-/* Navigation grid */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem auto 0;
-  padding: 1.5rem 0 0.5rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: flex-end;
-}
-a.remix {
-  background: var(--color-bg-alt);
-  color:var(--color-highlight);
-  border: 2px solid var(--color-highlight);
-  border-radius: 5px;
-  padding:0.5rem;
-  font-weight:bold;
-}
-a.remix:hover {
-  background: var(--color-primary);
-  color:var(--color-highlight);
+.keyright {
+    width: 50px;
+    height: 20px;
+    background: gray;
+    color: #ffffff;
+    position: absolute;
+    top: 470px;
+    left: 220px;
+    user-select: none; 
 }
