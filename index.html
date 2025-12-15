@@ -1,46 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="vn">
 <head>
-  <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-  <!--
-      This is the page head - it contains info 
-the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-  <title>Hello World!</title>
-
-  <!-- The website stylesheet -->
-  <link rel="stylesheet" href="/style.css" />
-
-  <!-- The website JavaScript file -->
-  <script src="/script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gemini Chat — ChatGPT Style</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-<!-- player -->
-<div class="player"></div>
-<!-- monster -->
-<div class="monster"></div>
-<!-- nút điều khiển -->
-<div class="keys">
-<button class="keyup data-dir="up">up</button>
-<div>
-<div>
-<button class="keyright" data-dir="right">right</button>
-<button class="keyleft" data-dir="left">left</button>
-<button class="keydown" data-dir="down">down</button>
-   </div>
-</div>
+  <div class="chat-container">
+    <h1>chatmini</h1>
+
+    <div id="chatBox" class="chat-box"></div>
+    
+    <div class="input-group">
+      <textarea id="userInput" placeholder="Nhập tin nhắn..."></textarea>
+      <button onclick="sendMessage()">➤</button>
+      <button onclick="startVoice()">🎙️</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
-</html>
+</html> 
