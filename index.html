@@ -12,7 +12,8 @@
   <link rel="icon" href="https://glitch.com/favicon.ico" />
 
   <!--
-      This is the page head - it contains info the browser uses
+      This is the page head - it contains info 
+the browser uses
       Like the title, which appears on the browser tab but not inside the page
       Further down you'll see the content that displays in the page
     -->
@@ -26,31 +27,20 @@
 </head>
 
 <body>
-  <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-  <div class="wrapper">
-    <div class="content" role="main">
-      <h1 class="title">Oh hi website!</h1>
-      <img src="/cool-website.svg" class="illustration" alt="cool website" />
-      <div class="instructions">
-        <p>
-          Fork <a href="https://github.com/glitchdotcom/website-to-compute">this project</a> and open it in a GitHub Codespace.
-        </p>
-        <p> Follow the steps in the README to deploy your new website to Fastly in a few steps!
-        </p>
-
-      </div>
-
-      <footer class="footer">
-        <div>
-          <a class="remix" href="https://github.com/glitchdotcom/website-to-compute">🚧 Get your own site</a>
-        </div>
-      </footer>
-    </div>
-  </div>
+<!-- player -->
+<div class="player"></div>
+<!-- monster -->
+<div class="monster"></div>
+<!-- nút điều khiển -->
+<div class="keys">
+<button class="keyup data-dir="up">up</button>
+<div>
+<div>
+<button class="keyright" data-dir="right">right</button>
+<button class="keyleft" data-dir="left">left</button>
+<button class="keydown" data-dir="down">down</button>
+   </div>
+</div>
 </body>
 
 </html>
